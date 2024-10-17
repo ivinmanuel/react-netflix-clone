@@ -1,0 +1,81 @@
+.banner {
+    background-image: none;
+    background-size: cover;
+    height: 700px;
+    color: rgb(255, 254, 254);
+    position: relative; /* Ensure fade and content position correctly */
+}
+
+.content {
+    padding-top: 140px;
+    height: 100%;
+    margin-left: 50px;
+}
+
+.title {
+    font-size: 5.1rem;
+    font-weight: 660;
+    padding-bottom: 0.3rem;
+}
+
+.discription {
+    width: 45rem;
+    line-height: 1.3;
+    padding-top: 1rem;
+    font-size: 1.1rem;
+    height: auto;
+    max-width: 500px;
+    margin-bottom: 1rem; /* Space between the description and buttons */
+}
+
+.banner_buttons {
+    display: flex;
+    gap: 20px; /* Space between the buttons */
+    margin-top: 20px; /* Ensure there's space between the description and buttons */
+}
+
+.button {
+    color: rgb(227, 4, 4);
+    outline: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: none;
+    color: #111;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 25px;
+    padding: 0.7rem 2rem;
+    background-color: rgba(254, 244, 244, 0.5);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the icon and the text */
+}
+
+.button:hover {
+    color: black;
+    background-color: white;
+}
+
+.fade_bottom {
+    position: absolute; /* Ensure fade stays at the bottom of the banner */
+    bottom: 0; /* Place it at the bottom */
+    width: 100%; /* Cover the entire width */
+    height: 9rem;
+    margin-bottom: 0px;
+    background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
+}
+
+.title, .discription {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow effect */
+}
+
+/* Slick slider dots styling */
+.slick-dots li button:before {
+    color: white;
+    font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #fff; /* Active dot color */
+}
+
